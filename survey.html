@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Опрос</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.back {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Опрос</h1>
+
+<form action="results.html" method="GET">
+<div class="question">
+<p>1. Вам интересна социология?</p>
+<label><input type="radio" name="q1" value="a" required> Да</label><br>
+<label><input type="radio" name="q1" value="b"> Нет</label><br>
+<label><input type="radio" name="q1" value="c"> Не знаю</label>
+</div>
+
+<div class="question">
+<p>2. Вы изучали политологию?</p>
+<label><input type="radio" name="q2" value="a" required> Да</label><br>
+<label><input type="radio" name="q2" value="b"> Нет</label><br>
+<label><input type="radio" name="q2" value="c"> Частично</label>
+</div>
+
+<div class="question">
+<p>3. Предпочитаете тесты или опросы?</p>
+<label><input type="radio" name="q3" value="a" required> Тесты</label><br>
+<label><input type="radio" name="q3" value="b"> Опросы</label><br>
+<label><input type="radio" name="q3" value="c"> Оба</label>
+</div>
+
+<div class="question">
+<p>4. Как часто используете интернет для учебы?</p>
+<label><input type="radio" name="q4" value="a" required> Каждый день</label><br>
+<label><input type="radio" name="q4" value="b"> Несколько раз в неделю</label><br>
+<label><input type="radio" name="q4" value="c"> Редко</label>
+</div>
+
+<div class="question">
+<p>5. Хотели бы проходить больше онлайн-тестов?</p>
+<label><input type="radio" name="q5" value="a" required> Да</label><br>
+<label><input type="radio" name="q5" value="b"> Нет</label><br>
+<label><input type="radio" name="q5" value="c"> Не уверен</label>
+</div>
+
+<button type="submit">Отправить ответы</button>
+</form>
+
+<a class="back" href="index.html">← Назад на главную</a>
+</div>
+</body>
+</html>
